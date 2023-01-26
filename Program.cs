@@ -44,15 +44,31 @@
 //Задача 6: Напишите программу, которая на вход принимает число и выдаёт, 
 //является ли число чётным (делится ли оно на два без остатка).
 
+// Console.WriteLine ("Введите число");
+// int count = int.Parse(Console.ReadLine()!);
+
+// if (count % 2 == 0)
+// {
+//     Console.WriteLine ("да");
+// }
+
+// else 
+// {
+//     Console.WriteLine ("нет");
+// }
+
+//Задача 8: Напишите программу, которая на вход принимает число (N), 
+//а на выходе показывает все чётные числа от 1 до N.
+
 Console.WriteLine ("Введите число");
-int count = int.Parse(Console.ReadLine()!);
+int max_count = int.Parse(Console.ReadLine()!);
+int count = 1;
 
-if (count % 2 == 0)
+while(count <= max_count)
 {
-    Console.WriteLine ("да");
-}
-
-else 
-{
-    Console.WriteLine ("нет");
+    if (count % 2 == 0)
+    {
+        Console.Write(count + " ");
+    }
+    count = count + 1;
 }
